@@ -14,45 +14,71 @@
 </head>
 
 <body>
-    <div class="container1">
-        <nav>
-            <img src="images/asset 0.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="index.html" class="home">Home</a></li>
-                <li><a href="#about.html" class="about">About</a></li>
-                <li><a href="#roadmap.html" class="roadmap">Roadmap</a></li>
-                <li><a href="#team.html" class="team">Team</a></li>
-                <li><a href="#nfts.html" class="nfts">NFTs</a></li>
-                <li><a href="#blog.html" class="blog">On Blog</a></li>
-            </ul>
-        </nav>
-        <div>
-            <header>
-                <div class="slider">
-                    <div class="slides">
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <div class="slide first">
-                            <img src="images/asset2.png" alt="imagem central">
-                        </div>
-                        <div class="slide"><img src="images/asset18.png" alt=""></div>
-                        <div class="slide"><img src="images/asset19.png" alt=""></div>
-                        <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                        </div>
-                    </div>
-            </header>
+    <header>
+        <a href="#"><img src="images/asset 0.png" alt="logo" class="logo"></a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="#about.html">About</a>
+            <a href="#roadmap.html">Roadmap</a>
+            <a href="#team.html">Team</a>
+            <a href="#nfts.html" class="nfts">NFTs</a>
+            <a href="#blog.html" class="blog">On Blog</a>
         </div>
-    </div>
+    </header>
+    <section class="section-main">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first">
+                    <img src="images/asset2.png" alt="imagem central">
+                </div>
+                <div class="slide"><img src="images/asset18.png" alt=""></div>
+                <div class="slide"><img src="images/asset19.png" alt=""></div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+    </section>
     <div class="container2">
         <section>
-
+            <div class="square1"><img src="images/asset 3.png" alt=""></div>
+            <div class="square2"><img src="images/asset 4.png" alt=""></div>
+            <div class="square3"><img src="images/asset 5.png" alt=""></div>
+            <div class="square4"><img src="images/asset 6.png" alt=""></div>
         </section>
     </div>
+    <div class="container3">
+        <div class="content-container3-1">
+            <section>
+                <img src="images/asset 7.png" alt="">
+                <img src="images/asset 9.png" alt="">
+                <img src="images/asset 8.png" alt="">
+                <img src="images/asset 10.png" alt="">
+            </section>
+        </div>
+        <div class="content-container3-2">
+            <section>
+                <p>About
+                    The NFTs
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.
 
+                    The point of using Lorem Ipsum is that it has.</p>
+                <input type="button" value="Learn About">
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 
 </html>

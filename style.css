@@ -2,52 +2,72 @@
     padding: 0;
     margin: 0;
     border: 0;
-}
-body{
-    background-color: black;
-}
-.container1{
-    background-image: url(images/asset\ 13.png);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.nav{
-    position: sticky;
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+.section-main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/asset\ 13.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    z-index: 999;
+    padding-top: 40px;
+    position: fixed;
+    width: 100%;
     top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-nav{
-    margin: 19px 0 19px 0;
+
+header.sticky{
+    background-color: #444459;
+    opacity: 0.97;
+    padding: 25px 0 25px 0;
+    transition: 0.3s;
 }
-.logo{
-    margin: 21px 0 0 222px;
-    float: left;
+
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    align-items: center;
 }
-nav ul{
-    text-align: center;
-    padding: 32px 0 35px 0;
-}
-nav ul li{
-    display: inline;
-    padding: 3px 37px 3px 37px;
-}
-nav ul li a{
+
+header .menu a{
     text-decoration: none;
-    color: #cecece;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
+    margin: 0 30px;
 }
-nav ul li a:hover:not(.home, .blog, .nfts){
+
+header .menu a:not(.nfts, .blog){
+    color: #cecece;
+
+}
+
+header .menu a:hover:not(.home, .blog, .nfts){
     color: #ddbce9;
     transition: 0.2s;
 }
-nav ul li a:active(.blog, .nfts){
+header .menu a:focus(.blog, .nfts){
     color: #ad6cca;
 }
-.home{
-    color: #ad6cca;
-}
+
 .nfts{
     padding: 15px 55px 15px 55px;
     border-style: solid;
@@ -67,7 +87,7 @@ nav ul li a:active(.blog, .nfts){
 .blog:hover{
     color: #99e7cb;
 }
-header{
+section{
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -91,16 +111,24 @@ header{
     width: 30%;
     transition: 2s;
 }
+@keyframes example{
+    0% {display: none;}
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
 .slide img{
     width: 344px;
     height: 486px;
+    animation-name: example;
+    animation-duration: 6s;
 }
 .navigation-manual{
     position: absolute;
     width: 360px;
-    margin-top: 673px;
+    margin-top: 623px;
     display: flex;
     justify-content: center;
+    
 }
 .manual-btn{
     border: 2px solid #01de8e;
@@ -123,4 +151,48 @@ header{
 }
 #radio3:checked ~ .first{
     margin-left: -60%;
+}
+.container2 section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.container2 section img{
+    margin: 0 30px;
+}
+.container2 section img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container3{
+    display: inline;
+    
+}
+.content-container3-1{
+    background-image: url(images/asset\ 14.png);
+    height: 130vh ;
+    width: 110vh ;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+}
+.content-container3-1 section{
+    margin-left: 220px;
+
+}
+.content-container3-1 section img{
+    
+    margin: 0 40px 40px 0;
+}
+.content-container3-2{
+    float: right;
+}
+.content-container3-2 section{
+    height: 110vh ;
+    width: 90vh ;
+}
+.content-container3-2 section p{
+    color: white;
 }
