@@ -337,3 +337,33 @@ header .menu a:focus(.blog, .nfts){
     margin-top: 4px;
 }
 
+.container-5{
+    width: 100%;
+
+}
+
+.container-5 .content-container-5{
+    width: 1140px;
+}
+
+.card-green{
+    color:#01de8e
+}
+
+.card-gray{
+    color: #6C6C6C;;
+}
+
+.card-white{
+    color: #fff;
+}
+
+.card-title{
+    width: 555px;
+    height: 106px;
+}
+
+.card-text-1{
+    width: 546px;
+    height: 296px;    
+}
