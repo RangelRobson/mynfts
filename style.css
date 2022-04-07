@@ -284,7 +284,7 @@ header .menu a:focus(.blog, .nfts){
     height: 342px;
     margin-top: 125px;
     background: url(images/asset\ 15.png) no-repeat right;
-    background-size: cover 60%;
+    background-size:cover 60%;
     position: relative;
     align-items: center;
 }
@@ -339,31 +339,220 @@ header .menu a:focus(.blog, .nfts){
 
 .container-5{
     width: 100%;
-
+    display: flex;
+    position: relative;
+    background: url(images/asset\ 16.png) no-repeat bottom left; 
+    align-items: center;
+    justify-content: center;
 }
 
 .container-5 .content-container-5{
     width: 1140px;
+    height: 1032px;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 110px;
 }
 
 .card-green{
-    color:#01de8e
+    color:#01de8e;
+    align-items: center;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 63px 72px 0 79px;
 }
 
 .card-gray{
-    color: #6C6C6C;;
+    color: #6C6C6C;
+    align-items: center;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 22px 72px 64px 79px;
+
 }
 
 .card-white{
     color: #fff;
+    align-items: center;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 72px 0 79px;
 }
 
 .card-title{
-    width: 555px;
+    width: 656px;
     height: 106px;
+    align-items: center;
+    margin: 0 auto 96px;
 }
 
+.gray-text-2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #6C6C6C;
+    text-align: center;
+}
+
+
 .card-text-1{
+    display: inline-block;
     width: 546px;
-    height: 296px;    
+    height: 296px;
+    position: absolute;
+    align-items: center;
+    background: #0F0F16;
+    border-radius: 34px;
+    margin-right: 40px;
+}
+
+.card-text-2{
+    display: inline-block;
+    width: 546px;
+    height: 296px;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    background: #0F0F16;
+    border-radius: 34px;
+}
+
+.card-text-3{
+    display: inline-block;
+    width: 546px;
+    height: 296px;
+    position: absolute;
+    left: 0;
+    bottom: 153px;
+    align-items: center;
+    background: #0F0F16;
+    border-radius: 34px;
+}
+
+.card-text-4{
+    display: inline-block;
+    width: 546px;
+    height: 296px;
+    position: absolute;
+    right: 0;
+    bottom: 153px;
+    align-items: center;
+    background: #0F0F16;
+    border-radius: 34px;
+}
+
+.content-container-5 .purple-button{
+    color: #fff;
+    background-color: #873AA9;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 14px 19.63px 13px 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 6px;
+    right: 43.8%;
+    
+}
+
+.container-6{
+    display: flex;
+    width: 100%;
+    height: 384px;
+    margin: 173px auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-6 .content-container-6{
+    display: inline-block;
+    width: 1140px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.countdown{
+    display: flex;
+    width: 100%;
+    height: 175px;
+    align-items: center;
+    justify-content: center;
+    margin: 103px auto 0;
+}
+
+.countdown .count{
+    width: 175px;
+    height: 175px;
+    background:#1E1E2B;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 30px rgba(21, 21, 31, 0.5);
+    margin: auto;
+}
+
+
+.container-7{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background: url(images/asset\ 17.png) no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+
+.container-7 .content-container-7{
+    display: flex;
+    position: relative;
+    width: 878.5px;
+    height: 792px;
+    border-top: 1px solid;
+    align-items: center;
+    justify-content: center;
+    border-image: linear-gradient(90deg, #7553CF, #38CAB2, #D72484) 1;
+}
+
+.content-container-7 p{
+    display: inline-block;
+    position: absolute;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    top: 67px;
+}
+
+.content-container-7 .get-button{
+    display: flex;
+    position: absolute;
+    width: 195.18px;
+    height: 63px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #FFFFFF;
+    top: 203px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container-7 .get-button:hover{
+    border-color: #01DE8E;
+    transition: 0.5s;
+}
+
+.content-container-7 .green-logo{
+    display: flex;
+    position: absolute;
+    width: 187px;
+    height: 61px;
+    top: 317px;
 }
