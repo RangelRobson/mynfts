@@ -897,6 +897,11 @@ header .menu a:focus(.blog, .nfts){
 }
 
 @media screen and (max-width: 1000px) {
+
+    .section-main{
+        height: 40%;
+    }
+
 .container .menu, .logo{
     display:none
 }
@@ -977,7 +982,7 @@ header .nav-bar{
 .navigation .nav-items a{
     text-decoration: none;
     color: #1E1E2B;
-    font-size: 1em;
+    font-size: 0.86em;
     margin: 15px 50px;
     transition: 0.3s ease;
 }
@@ -988,5 +993,26 @@ header .nav-bar{
     margin-right: 5px;
 }
 
+.slide img{
+    width: 40%;
+    height: 40%;
+}
+
+.slide .text-img{
+    top: 10px;
+}
+
+.text-img h1{
+    font-size: 24px;
+    line-height:36px;
+}
+.text-img span{
+    font-size: 24px;
+    line-height:36px;
+}
+.text-img p{
+    font-size: 12px;
+    line-height: 18px;
+}
 
 }
